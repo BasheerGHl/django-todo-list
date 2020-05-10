@@ -1,0 +1,37 @@
+{% extends 'frontend/base.html' %}
+{% block content %}
+<!-- {% load crispy_forms_tags %} -->
+
+<div class="w-60 bg-white py-2 m-5">
+    <h1 class="text-center p-2">Welcome to our Django REST API<br><hr> To-Do List </h1>
+</div>
+
+<div class="container">
+
+    <div id="task-container">
+
+
+        <div id="form-wrapper">
+            <form id="form">
+                <div class="flex-wrapper">
+                    <div style="flex: 6">
+                        <input id="title" class="form-control" type="text" name="title" placeholder="Add task">
+                    </div>
+                    <div style="flex: 1">
+                        <input id="submit" class="btn" type="submit" >
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
+        <div id="list-wrapper">
+        
+        </div>
+        
+    </div>
+
+</div>
+
+
+{% endblock %}
